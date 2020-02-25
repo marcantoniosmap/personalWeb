@@ -24,6 +24,10 @@ hr.light {
   font-family: $font-family-sans-serif;
 }
 
+.grad {
+  background-image: linear-gradient(to right, $red,$blue) !important;
+}
+
 .btn-xl {
   padding: 1rem 2rem;
   font-size: 0.85rem;

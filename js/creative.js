@@ -24,10 +24,10 @@
 
 
   // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 0
-  });
+  // $('body').scrollspy({
+  //   target: '#mainNav',
+  //   offset: 0
+  // });
 
  $(document).ready(function(){
     $('#nav-icon').click(function(){
@@ -58,9 +58,9 @@
     }
   };
   // Collapse now if page is not at top
-  // navbarCollapse();
+  navbarCollapse();
   // Collapse the navbar when page is scrolled
-  // $(window).scroll(navbarCollapse);
+  $(window).scroll(navbarCollapse);
 
 
   // Magnific popup calls

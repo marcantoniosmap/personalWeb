@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
+    
 
+  <title>MarcAntonio</title>
 
-  <title>CIPTADA</title>
-
-  <link rel="icon" href="img/logo/logo.ico" type="image/gif" sizes="16x16">
+  <link rel="icon" href="img/logo/ico/logo (3).ico" type="image/gif" sizes="16x16">
 
   <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -32,32 +32,59 @@
 </head>
 
 <body id="page-top">
-  <!--Navbar-->
-  <div class="row h-100 no-gutters">
-  <div class="col-md-2 col-sm-12 " style="background-color: black; position: relative;">
-      <div class="container">
-        <div>
-          <img src="img/logo/logo.svg" alt="">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img src="img/logo/logo (4).png" width=40 onerror="this.onerror=null; this.src='img/logo/logo.png'">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <div id="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#">Achievement</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbar-drop" data-toggle="dropdown">Proyek</a>
+            <div class="dropdown-menu mt-4">
+              <a href="#" class="dropdown-item">Uluwatu Square</a>
+              <a href="#" class="dropdown-item">thejimbaranlodge</a>
+            </div>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
       </div>
-  </div>
-  <!--Content Here-->
-  <div class="col-md-10">
-      <div class="w-00 h-100">
+    </div>
+  </nav>
            <!-- Masthead -->
   <header id ="masthead-main" class="masthead" >
     <div class="container h-100">
-      <div class="row h-100 align-items-center justify-content-center text-center">
-        <div class="col-lg-10 align-self-end">
-          <h1 class="text-centers text-white text-uppercase">MARCANTONIO's PERSONAL LIFE
-
+      <div class="row h-100 align-items-left justify-content-left text-center">
+        <div class="col-lg-7 col-12 align-self-end">
+          <h1 class="text-lg-left text-white text-uppercase">MARCANTONIO
           </h1>
-          <hr class="divider my-4">
+          <hr class="divider my-4  mx-lg-0">
+
         </div>
-        <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-50 font-weight-light mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ut iste sequi illum! Nulla vero animi sapiente temporibus exercitationem obcaecati amet, ullam, doloremque possimus beatae assumenda, sed consectetur! Esse, minima!
+        <div class="col-lg-6 col-12 px-5 pl-lg-3 text-lg-left text-center align-self-baseline">
+          <p class="text-white font-weight-light mb-5">Hey there, welcome to the summary of my life. I am a designer/developer who is constantly learning.
           </p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Tentang Kami</a>
+          <a class="btn btn-primary btn-xl js-scroll-trigger grad" href="#about">Take A Tour</a>
         </div>
       </div>
     </div>
@@ -68,10 +95,10 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
-          <h2 class="text-black mt-0"><span class="text-primary">Siapakah</span> Kami?</h2>
+          <h2 class="text-black mt-0"><span class="text-primary">Who </span>Am I?</h2>
           <hr class="divider light my-4">
           <p class="text-dark mb-4">iptaDamai is a multimedia competition and peacebuilding festival that will gather hundreds of creative young people to find collaborative solutions to create peace, and raise awareness around religious tolerance.</p>
-          <a class="btn btn-primary btn-xl " href="#">Visi dan Misi</a>
+          <a class="btn btn-primary btn-xl grad" href="#">Visi dan Misi</a>
         </div>
       </div>
       
@@ -80,7 +107,7 @@
   </section>
 
   <!-- Services Section -->
-  <section class="page-section bg-dark" id="services">
+  <section class="page-section bg-grey" id="services">
     <div class="container mb-5">
       <h1 class="text-center text-white mt-0"><span class="font-primary">Proyek </span>Kami</h1>
       <hr class="divider my-4">
@@ -118,23 +145,13 @@
     </div>
   </section>
 
-  <!-- Call to Action Section -->
-  <section class="page-section text-dark" style="background-image: url('img/background/uluwatu-gold.jpg');background-attachment: fixed;background-position: center;">
-    <div class="container text-center">
-      <h2 class="mb-4">Partner with us!</h2>
-      <form class="form-inline d-flex" id="my-form">
-        <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="name@example.com">
-        <button id="my-form-button" type="submit" value="Send" class="btn btn-dark p-auto mx-auto">SUBMIT</button>
-        <p></p>
-      </form>
-    </div>
-  </section>
 
    <!-- Call to Action Section -->
    <section class="page-section bg-white text-dark">
-    <div class=" container text-center">
-      <h2 class="mb-5">Our <span class="text-primary">Gallery</span></h2>
-      <p>When luxuriousity meet our blabla Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint et sit beatae dolorum itaque dignissimos ex.</p>
+    <div class=" container text-center mb-5">
+      <h2 class="mb-3">My <span class="text-primary">Gallery</span></h2>
+      <hr class="divider">
+      <p>Designing logos are my specialities, creating a symbol of an event or brand </p>
     </div>
     <div id="image-gallery"class="slider">
       <div class="slide"><img src="img/gallery/item (1).jpg"></div>
@@ -163,7 +180,7 @@
         <!-- <h6 class=" pt-3 font-italic text-center text-white">The mission of Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis?</h6> -->
         <div class="row py-5">
           <div class="col-lg-3 col-md-6 ">
-            <img src="img/logo/logo.svg" width="150px" class=" d-none d-lg-block" alt="" srcset="">
+            <img src="img/logo/logo (3).png" width="150px" class=" d-none d-lg-block" alt="" srcset="">
           </div>
           <div class="col-lg-3 col-md-6 pb-3 pb-lg-0">
             <div class="py-2 text-white">
@@ -211,44 +228,9 @@
   </footer>
       </div>
   </div>
-</div>
 
 
-  <!-- Navigation -->
-  <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img src="img/logo/logo.svg" width=40 onerror="this.onerror=null; this.src='img/logo/logo.png'">
-      </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <div id="nav-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Tentang Kami</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#">Services</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#" id="navbar-drop" data-toggle="dropdown">Proyek</a>
-            <div class="dropdown-menu mt-4">
-              <a href="#" class="dropdown-item">Uluwatu Square</a>
-              <a href="#" class="dropdown-item">thejimbaranlodge</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Hubungi Kami</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
+  
  
  
 
