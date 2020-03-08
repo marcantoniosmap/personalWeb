@@ -9718,6 +9718,10 @@ html {
   color: #840205;
 }
 
+.font-paragraph {
+  font-family: "Montserrat", "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
@@ -9978,6 +9982,14 @@ header.masthead h1 {
     background-attachment: scroll;
     background-size: cover;
   }
+}
+
+#masthead-IS {
+  background: linear-gradient(to bottom, rgba(1, 1, 1, 0.8) 0%, rgba(1, 1, 1, 0.8) 100%), url("../img/masthead/masthead-IS.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 #events .container-fluid, #events .container-sm, #events .container-md, #events .container-lg, #events .container-xl {

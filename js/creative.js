@@ -41,12 +41,6 @@
       });
   });
 
- var parallax=document.getElementById("masthead-main");
-
-  window.addEventListener("scroll",function(){
-    var offset = window.pageYOffset;
-    parallax.style.backgroundPositionY=offset*0.7+ "px";
-  });
 
   // Collapse Navbar
   var navbarCollapse = function() {
@@ -83,8 +77,8 @@ $('#image-gallery').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
-  arrows: false,
-  dots: false,
+  arrows: true,
+  dots: true,
   pauseOnHover: false,
   responsive: [{
       breakpoint: 768,

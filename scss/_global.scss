@@ -8,6 +8,10 @@ html {
   color: $primary;
 }
 
+.font-paragraph{
+  font-family: $font-family-serif;
+}
+
 // Custom horizontal rules
 hr.divider {
   max-width: 3.25rem;

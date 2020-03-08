@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+    
+
+  <title>MarcAntonio</title>
+
+  <link rel="icon" href="img/logo/ico/logo (3).ico" type="image/gif" sizes="16x16">
+
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Mr+Dafoe|Playfair+Display|Open+Sans&display=swap" rel="stylesheet">  
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+  <!-- <link rel="stylesheet" href="css/slick.css"> -->
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img src="img/logo/logo (4).png" width=40 onerror="this.onerror=null; this.src='img/logo/logo.png'">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <div id="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  disabled" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  disabled" href="#">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  disabled" href="#">Achievement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  disabled" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+           <!-- Masthead -->
+  <header id ="masthead-IS" class="masthead" >
+    <div class="container h-100">
+      <div class="row h-100 align-items-left justify-content-left text-center">
+        <div class="col-lg-7 col-12 align-self-end">
+          <h1 class="text-lg-left text-white text-uppercase">Intelligent System
+          </h1>
+          <hr class="divider my-4  mx-lg-0">
+
+        </div>
+        <div class="col-lg-6 col-12 px-5 pl-lg-3 text-lg-left text-center align-self-baseline">
+          <p class="text-white font-weight-light mb-5">Weekly Journal + Progress on the Final Project of MarcAntonio Purnama 2201816480
+          </p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger grad" href="#journal">Look at Journal</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-section bg-white" id="journal">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="text-black mt-0"><span class="text-primary">Weekly </span>Journal</h2>
+        <hr class="divider light my-4">
+
+        <div class="my-4">
+          <label class=""for="journal-select">Sort by</label>
+          <select id="journal-select" onchange="changeContent(this.value)">
+            <option value=1>Oldest</option>
+            <option value=2>Newest</option>
+
+          </select>
+      </div>
+        <div id="journal-content">
+
+        </div>
+      </div>
+      
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    
+    <div class="bg-primary">
+      <div class=" py-2 container">
+        <div class="small text-center text-white">
+          Made with love and joy
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  
+ 
+ 
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="js/creative.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/intelligentsystem.js"></script>
+  <script>
+    var parallax=document.getElementById("masthead-IS");
+   
+     window.addEventListener("scroll",function(){
+       var offset = window.pageYOffset;
+       parallax.style.backgroundPositionY=offset*0.7+ "px";
+     });
+  
+ 
+  
+    class Journal{
+  constructor(week,title,content){
+    this.week =week;
+    this.title=title;
+    this.content=content;
+  }
+}
+
+post1= new Journal(1,"First Journal, 17 February","On the first week of this course, we focused mainly on the introduction of AI, what is it and what are the attributes that create them. We also touch a bit of history of the AI itself, and finished by the task environment discussion. There was no progress on the final project yet i have confirmed my group, which is with Figo Aranta.");
+post2= new Journal(2,"Second Journal 24 February","This session we dig deeper into the BFS and DFS algorithm, what are the nodes and which actually is more efficient. Although my team and i had no significant progress on the project, we have discussed alot about models and machine learning library that we could use in our final.");
+post3= new Journal(3,"Third Journal 2 March","Just like last week we were still discussing about algorithm, specifically in local search algorithm. We were taught on how to calculate simulateed annealing to measure acceptance. After, we dig deeper into genetic algorithm and the examples of it. There is still no progress on the project");
+post4= new Journal(4,"Fourth Journal 9 March","content");
+
+
+var posts=[post1,post2,post3,post4]
+
+function changeContent(num){
+  console.log(num);
+  $("#journal-content").html("");
+  if(num==1){
+    for(var i=0; i <posts.length;i++)
+    {
+      $("#journal-content").append(' <div class="card mb-4"><div class="card-header"><b> Week '+posts[i].week+'</b></div><div class="card-body text-left"> <h5 class="font-paragraph card-title">'+posts[i].title+'</h5>  <p class="card-text">'+posts[i].content+'</p></div></div>');
+    }
+  }
+  else{
+    for(i=posts.length-1; i>=0;i--)
+    {
+      $("#journal-content").append(' <div class="card mb-4"><div class="card-header"><b> Week '+posts[i].week+'</b></div><div class="card-body text-left"> <h5 class="font-paragraph card-title">'+posts[i].title+'</h5>  <p class="card-text">'+posts[i].content+'</p></div></div>');
+    }
+  }
+};
+changeContent(1);
+
+  </script>
+
+</body>
+
+</html>
